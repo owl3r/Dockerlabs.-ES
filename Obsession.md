@@ -81,14 +81,26 @@ Ahora ya tenemos usuario y contraseña
   >Usuario: Russoski <p></p>
   >Contraseña: iloveme
 
-<p></p>
-
+<p>
+&nbsp;
+</p>
 Una vez descubierta la contraseña procedemos a conectarnos a traves de SSH
 Estando dentro de la maquina procedemos a listar todos los directorios y nos encontramos con que .bash_history contiene datos, echamos un vistazo a ver que nos encontramos
+<p></p>
+
 ![datosbashhistoy](https://github.com/owl3r/Dockerlabs.es/assets/169026357/9244a385-41ce-4f68-b67a-353a6f9c7198)
 ![directoriocontraseña](https://github.com/owl3r/Dockerlabs.es/assets/169026357/04ef30e9-31c1-4082-8507-9f9ddd1aac75)
 
 <p></p>
 
 En el recorrido que ha hecho russoski por la terminal vemos que a accedido al directorio `/var/www/html/important` en el cual se encuentra un archivo de texto que parece de importancia.
+<p></p>
+
 ![contraseña](https://github.com/owl3r/Dockerlabs.es/assets/169026357/f7d61c14-3518-4ddd-89ca-81d2d0d4b66b)
+
+Por lo visto es un borrador de un mensaje que ha enviado a el usuario Anuar en el cual indica cual es la contraseña de usuario root. En este caso esta hasheada en MD5.
+La pasamos por un dehasher y la contraseña que nos arroja es : fucker
+
+![root](https://github.com/owl3r/Dockerlabs.es/assets/169026357/d121e157-73ef-4f87-b3dc-75f007b40699)
+
+Probamos a acceder a root con esa contraseña y nos da positivo ¡ESTAMOS DENTRO!
