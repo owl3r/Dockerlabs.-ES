@@ -1,24 +1,13 @@
 # Indice 
-
 - Nmap 
-
 - Puerto 80/HTTP 
-
 - Hydra 
-
-- Puerto 22/SSH 
-
-  
-
-  
+- Puerto 22/SSH
+- Escalada de privilegios
 
 # Reconocimiento 
 
 Comenzamos la maquina con un escaneo básico con `Nmap` para listar primeramente los puertos y después analizar en detalle cada puerto descubierto 
-
-  
-
-  
 
 `Recuerda que algunos comandos requieren de el comando SUDO al inicio` 
 
@@ -171,6 +160,8 @@ Ahora ya tenemos usuario y contraseña
 </p> 
 
 Una vez descubierta la contraseña procedemos a conectarnos a través de SSH 
+
+# Escalada de privilegios
 
 Estando dentro de la maquina procedemos a listar todos los directorios y nos encontramos con que .bash_history contiene datos, echamos un vistazo a ver que nos encontramos 
 
