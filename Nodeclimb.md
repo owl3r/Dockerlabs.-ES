@@ -1,5 +1,13 @@
 ## Indice
+- Nmap
 
+- Puerto 21
+
+- John
+
+- Puerto 22
+
+- Escalada de privilegios
 
 
 
